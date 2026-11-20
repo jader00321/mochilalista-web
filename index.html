@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MochilaLista — Sistema Comercial Offline-First</title>
+  <style>
+    :root {
+      --primary: #1d4ed8;
+      --primary-dark: #0f2c59;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #475569;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: #ffffff;
+      padding: 56px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.2rem; margin-bottom: 10px; letter-spacing: -0.02em; }
+    header p { max-width: 680px; margin: 0 auto 24px; font-size: 1.05rem; opacity: 0.94; }
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .btn {
+      display: inline-block;
+      background: #ffffff;
+      color: var(--primary-dark);
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-weight: 600;
+      margin: 6px;
+      transition: transform 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-outline {
+      background: transparent;
+      color: #ffffff;
+      border: 1.5px solid rgba(255, 255, 255, 0.7);
+    }
+    main { max-width: 900px; margin: -24px auto 48px; padding: 0 20px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05);
+    }
+    h2 { color: var(--primary-dark); font-size: 1.35rem; margin-bottom: 14px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-top: 12px;
+    }
+    .feature {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .feature h3 { font-size: 1rem; color: var(--primary-dark); margin-bottom: 6px; }
+    .feature p { font-size: 0.92rem; color: var(--muted); }
+    ul { padding-left: 20px; color: var(--muted); }
+    li { margin-bottom: 8px; }
+    a { color: var(--primary); }
+    footer {
+      text-align: center;
+      padding: 24px 20px 40px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer nav { margin-bottom: 10px; }
+    footer nav a { margin: 0 10px; text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="badge">Aplicación Móvil Android • Offline-First</div>
+    <h1>MochilaLista</h1>
+    <p>
+      Sistema comercial móvil de Punto de Venta (POS), control de inventarios,
+      cotizaciones inteligentes con escaneo IA y gestión de clientes diseñado para comercios y librerías en Perú.
+    </p>
+    <a class="btn" href="privacidad.html">Política de Privacidad</a>
+    <a class="btn btn-outline" href="mailto:vjulioangello@gmail.com">Soporte Oficial</a>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>¿Qué ofrece MochilaLista?</h2>
+      <div class="grid">
+        <div class="feature">
+          <h3>Operación 100% Offline</h3>
+          <p>Registra ventas, productos, inventario y clientes directamente en tu teléfono sin depender de internet constante.</p>
+        </div>
+        <div class="feature">
+          <h3>Cotizaciones Inteligentes</h3>
+          <p>Digitaliza listas de compras, pedidos mayoristas y listas escolares mediante la cámara o galería del dispositivo.</p>
+        </div>
+        <div class="feature">
+          <h3>Respaldos Cifrados en Google Drive</h3>
+          <p>Protege tu negocio con copias de seguridad cifradas (AES-256-GCM) guardadas de forma privada en tu propia cuenta de Google.</p>
+        </div>
+        <div class="feature">
+          <h3>Gestión Multi-Perfil</h3>
+          <p>Administra múltiples perfiles comerciales y recupera el 100% de tu información al cambiar de dispositivo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Seguridad y Uso de Google Drive</h2>
+      <ul>
+        <li>MochilaLista utiliza el acceso opcional a Google Drive únicamente mediante el permiso privado <strong>drive.appdata</strong>.</li>
+        <li>La aplicación solo puede leer, crear y restaurar sus propias copias de seguridad cifradas en una carpeta oculta exclusiva de la app.</li>
+        <li>MochilaLista nunca accede a tus documentos, fotos ni archivos personales de Google Drive, ni comparte información comercial con terceros.</li>
+      </ul>
+      <p style="margin-top: 14px;">
+        Consulta todos los detalles en nuestra <a href="privacidad.html"><strong>Política de Privacidad</strong></a>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Titularidad y Contacto</h2>
+      <p><strong>Aplicación:</strong> MochilaLista (<code>com.mochilalista.app</code>)</p>
+      <p><strong>Titular y Desarrollador:</strong> Julio Angello Vasquez Navarro</p>
+      <p><strong>Correo de Soporte y Privacidad:</strong> <a href="mailto:vjulioangello@gmail.com">vjulioangello@gmail.com</a></p>
+      <p><strong>País:</strong> Perú</p>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="privacidad.html">Política de Privacidad</a>
+      <a href="mailto:vjulioangello@gmail.com">Contacto</a>
+    </nav>
+    <p>© 2026 MochilaLista — Julio Angello Vasquez Navarro. Protegido bajo el D.L. 822 e INDECOPI (Perú).</p>
+  </footer>
+</body>
+</html>
