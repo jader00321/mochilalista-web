@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — MochilaLista</title>
+  <style>
+    :root {
+      --primary: #1d4ed8;
+      --primary-dark: #0f2c59;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #475569;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 1.9rem; margin-bottom: 8px; }
+    header p { opacity: 0.92; font-size: 0.96rem; }
+    main { max-width: 860px; margin: 28px auto 48px; padding: 0 20px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.05);
+    }
+    h2 {
+      color: var(--primary-dark);
+      font-size: 1.2rem;
+      margin: 24px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    h2:first-of-type { margin-top: 0; }
+    p { margin-bottom: 12px; color: var(--text); }
+    ul { padding-left: 22px; margin-bottom: 14px; color: var(--muted); }
+    li { margin-bottom: 8px; }
+    .highlight {
+      background: #eff6ff;
+      border-left: 4px solid var(--primary);
+      padding: 14px 16px;
+      border-radius: 8px;
+      margin: 14px 0;
+      font-size: 0.95rem;
+    }
+    a { color: var(--primary); }
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 10px 20px 36px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Política de Privacidad de MochilaLista</h1>
+    <p>Última actualización: 20 de noviembre de 2026 • Paquete Android: com.mochilalista.app</p>
+  </header>
+
+  <main>
+    <article class="card">
+      <h2>1. Responsable y Titular de la Aplicación</h2>
+      <p>
+        La aplicación móvil <strong>MochilaLista</strong> (identificador de paquete <code>com.mochilalista.app</code>)
+        es desarrollada y operada por <strong>Julio Angello Vasquez Navarro</strong> (Perú).
+        Esta Política de Privacidad describe cómo se recopilan, almacenan y protegen los datos cuando utilizas la aplicación,
+        en conformidad con la Ley N.° 29733 (Ley de Protección de Datos Personales del Perú) y las políticas de datos de usuario de Google.
+      </p>
+
+      <h2>2. Arquitectura Offline-First (Datos Locales en tu Dispositivo)</h2>
+      <p>
+        MochilaLista funciona principalmente de manera local (<strong>Offline-First</strong>). Toda la información de tu negocio
+        —productos, inventario, ventas, cotizaciones, clientes y perfiles comerciales— se almacena directamente en una base de datos
+        SQLite local en tu teléfono. El desarrollador no opera servidores centrales que recopilen, lean o almacenen las ventas ni los
+        registros comerciales de tu negocio.
+      </p>
+
+      <h2>3. Uso de Datos de Usuario de Google y Google Drive API</h2>
+      <p>
+        De forma <strong>completamente opcional</strong>, el usuario puede vincular su cuenta de Google para respaldar y restaurar
+        la base de datos de su negocio en Google Drive.
+      </p>
+      <div class="highlight">
+        <strong>Permiso utilizado:</strong> MochilaLista solicita únicamente el alcance no sensible
+        <code>https://www.googleapis.com/auth/drive.appdata</code> (carpeta privada de datos de aplicación en Google Drive)
+        y la información básica de identificación de la cuenta (correo electrónico) para mostrar qué cuenta está vinculada.
+      </div>
+      <ul>
+        <li><strong>Finalidad exclusiva:</strong> Crear, listar y restaurar copias de seguridad cifradas (<code>.mlbg</code>, cifradas localmente con AES-256-GCM) dentro de la carpeta privada oculta de la aplicación en el propio Google Drive del usuario.</li>
+        <li><strong>Sin acceso a archivos personales:</strong> MochilaLista NO puede ver, leer, modificar ni eliminar ningún otro archivo, carpeta, documento o foto almacenado en tu Google Drive.</li>
+        <li><strong>Cero venta o compartición:</strong> No vendemos, alquilamos ni transferimos datos de usuario de Google a terceros, anunciantes ni corredores de datos.</li>
+        <li><strong>Cumplimiento de Uso Limitado de Google:</strong> El uso y la transferencia de información recibida de las API de Google por parte de MochilaLista se adherirán estrictamente a la <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Política de Datos de Usuario de los Servicios de API de Google</a>, incluidos los requisitos de Uso Limitado (<em>Limited Use</em>).</li>
+      </ul>
+
+      <h2>4. Permisos del Dispositivo y Funciones Opcionales</h2>
+      <ul>
+        <li><strong>Cámara y Galería:</strong> Se utilizan únicamente cuando el usuario elige tomar o seleccionar una foto para escanear códigos de barras, códigos QR de licencia o digitalizar facturas/listas mediante el escáner inteligente.</li>
+        <li><strong>Procesamiento de Escaneo con IA:</strong> Cuando el usuario utiliza voluntariamente el escaneo de listas o facturas con IA, únicamente la imagen seleccionada se envía al servicio de Google Gemini API para extraer los ítems solicitados, sin almacenarla en servidores del desarrollador.</li>
+        <li><strong>Identificador Técnico del Dispositivo:</strong> Para gestionar la activación offline de licencias se genera un código hash local derivado del identificador de aplicación Android (no se recopila ni se solicita el IMEI del equipo).</li>
+        <li><strong>Bluetooth:</strong> Se utiliza exclusivamente si el usuario decide conectar una impresora térmica local para emitir comprobantes.</li>
+      </ul>
+
+      <h2>5. Seguridad, Retención y Eliminación de Datos</h2>
+      <ul>
+        <li><strong>Cifrado local y en la nube:</strong> Las copias de seguridad subidas a Google Drive se cifran con AES-256-GCM antes de salir del dispositivo. La aplicación conserva un máximo de las últimas 5 copias fechadas en tu carpeta privada <code>appDataFolder</code>.</li>
+        <li><strong>Control total del usuario:</strong> Puedes desvincular tu cuenta de Google en cualquier momento desde la sección <em>Respaldos y Seguridad</em> dentro de la app, eliminar tus datos locales desde el dispositivo o revocar el acceso de MochilaLista directamente desde los ajustes de seguridad de tu cuenta de Google (<a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">myaccount.google.com/permissions</a>).</li>
+        <li><strong>Al desinstalar la aplicación:</strong> Los datos locales almacenados en el teléfono son eliminados por el sistema operativo Android. Las copias que hayas guardado previamente en tu Google Drive permanecen bajo tu exclusivo control hasta que decidas restaurarlas o eliminarlas desde tu cuenta.</li>
+      </ul>
+
+      <h2>6. Cambios en esta Política</h2>
+      <p>
+        Podemos actualizar esta Política de Privacidad periódicamente para reflejar mejoras técnicas o requisitos legales.
+        Cualquier cambio será publicado en esta misma dirección web con la fecha de actualización correspondiente.
+      </p>
+
+      <h2>7. Contacto y Derechos del Usuario</h2>
+      <p>
+        Si tienes preguntas, solicitudes sobre tus datos o necesitas asistencia técnica, comunícate directamente con el titular:
+      </p>
+      <ul>
+        <li><strong>Titular:</strong> Julio Angello Vasquez Navarro</li>
+        <li><strong>Correo electrónico:</strong> <a href="mailto:vjulioangello@gmail.com">vjulioangello@gmail.com</a></li>
+      </ul>
+
+      <a class="back-link" href="index.html">← Volver a la página principal de MochilaLista</a>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2026 MochilaLista — Julio Angello Vasquez Navarro. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
